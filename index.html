@@ -9,14 +9,42 @@
     <title>responsive</title>
   </head>
   <body>
-    <div id="navbar"></div>
-    <div id="slider" class="mt-20"></div>
-    <script>
-      $(function () {
-        $("#navbar").load("connect/navbar.html");
-        $("#slider").load("connect/slider.html");
-      });
-    </script>
+    <div class="container-fluid">
+  <section class="container">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-7 col-xs-4 mt-5 contact">
+        <img class="icon" src="icon/phone.svg" alt="" />
+        <span>09360814633</span>
+        <img class="icon hide" src="icon/mail.svg" alt="" />
+        <span class="hide">avafa0065@gmail.com</span>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-5 col-xs-6">
+        <a class="link-top p-5" href="#">
+          <img class="icon" src="icon/instagram.svg" alt="" />
+        </a>
+        <a class="link-top p-5" href="#">
+          <img class="icon" src="icon/telegram.svg" alt="" />
+        </a>
+        <a class="link-top p-5" href="#">
+          <img class="icon" src="icon/whatsapp.svg" alt="" />
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+<nav class="nav" id="mynav">
+  <a href="" class="nav-link aicon"
+    ><img src="icon/sofa.svg" class="icon"
+  /></a>
+  <a class="nav-link active" id="active" href="">خانه</a>
+  <a class="nav-link" href="">محصولات</a>
+  <a class="nav-link" href="">درباره ما</a>
+  <a class="nav-link" href="">ارتباط با ما</a>
+
+  <a href="javascript:void(0)" class="bars" onclick="myFunc();""
+    ><img src="icon/bars.svg" class="hamber"
+  /></a>
+</nav>
     <script src="js/main.js"></script>
   </body>
 </html>

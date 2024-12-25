@@ -1,0 +1,94 @@
+/* =============US================ */
+.container-fluid {
+  background-color: #163ff7;
+}
+.container-fluid .row {
+  direction: ltr;
+  flex-wrap: wrap;
+}
+.contact img {
+  vertical-align: -2px;
+  margin-left: 20px;
+}
+.contact span {
+  color: #fff;
+}
+.link-top {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0;
+}
+.link-top:hover {
+  background: orange;
+}
+.icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  padding-top: 3px;
+}
+@media screen and (max-width: 600px) {
+  .hide {
+    display: none;
+  }
+  .contact {
+    margin-right: 5%;
+  }
+}
+/* =============NAV================ */
+.nav {
+  width: 100%;
+  background-color: #efefef;
+  border-bottom: 1px solid #c1c1c480;
+  height: auto;
+  overflow: hidden;
+}
+.nav-link {
+  color: #867c7c;
+  padding: 12px 16px;
+  font-size: 18px;
+  float: right;
+}
+.nav-link:not(:first-child):hover {
+  border-bottom: 2px solid orange;
+}
+.aicon {
+  padding-bottom: 8px;
+  cursor: auto;
+}
+.nav .icon {
+  width: 28px;
+  height: auto;
+  margin-top: -5px;
+}
+.hamber {
+  width: 30px;
+  height: auto;
+}
+.bars {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .nav-link:not(:first-child) {
+    display: none;
+  }
+  .bars {
+    margin: 8px 10px;
+    display: block;
+    float: left;
+  }
+  .nav.responsive {
+    position: relative;
+  }
+  .nav.responsive a.bars {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+}
